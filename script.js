@@ -3,7 +3,7 @@ const videoPlayer = document.getElementById('videoPlayer');
 
 // Array of video URLs - update with actual paths or URLs
 const videoSources = [
-    'https://youtu.be/u4w5wScBaNA?list=RDKUNTKDOjXcY',
+    'https://github.com/Sadiqul10/Assignment-/blob/main/02.MP4'
     'C:/Users/sadiq/OneDrive/Desktop/Video Player/Project for MCA/Video/02.MP4', // Replace with your video URL or local server path
     'C:/Users/sadiq/OneDrive/Desktop/Video Player/Project for MCA/Video/03.MP4',  // Replace with your video URL or local server path
     'C:/Users/sadiq/OneDrive/Desktop/Video Player/Project for MCA/Video/04.mp4',
