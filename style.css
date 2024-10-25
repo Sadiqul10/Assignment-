@@ -1,0 +1,120 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #90AEAD;
+}
+
+header {
+    background-color: #AFDDE5;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: rgb(233, 31, 31);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #AC8968;
+    border-radius: 5px;
+}
+
+/* Align sections in a horizontal row */
+main {
+    display: flex;
+    flex-wrap: wrap; /* Wraps the sections to new lines if necessary */
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Video and Audio Sections */
+section {
+    flex: 1 1 45%; /* Each section takes about 45% of the container width */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align:left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 1st, 3rd sections aligned to the right */
+section:nth-child(odd) {
+    margin-left: auto; /* Aligns odd sections to the right */
+}
+
+/* 2nd, 4th sections aligned to the left */
+section:nth-child(even) {
+    margin-right: auto; /* Aligns even sections to the left */
+}
+
+h2 {
+    color: #333;
+    text-align:center;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Video and Audio Players */
+video, audio {
+    display: block;        
+    margin: 20px auto;      
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.controls button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.controls button:hover {
+    background-color: #ed1c1c;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
