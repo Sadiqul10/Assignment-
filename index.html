@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Multimedia Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Multimedia Application</h1>
+        <nav>
+            <a href="#video">Videos</a>
+            <a href="#audio">Audio</a>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <section id="video">
+        <h2>Video Player</h2>
+        <p>
+            <h3> Play/Pause Control:</h3>
+            <h4>Users can start or stop video playback using a single button,
+                providing easy control over watching the content.</h4>
+            <h3>Next/Previous Video Navigation</h3>
+            <h4>With Next and Previous buttons, users can move sequentially through 
+            a playlist of videos. The application remembers the current position,
+            allowing users to switch to the next or previous video smoothly.</h4>
+            
+            <h3>Custom Video Player:</h3> 
+            <h4>The setup creates a more interactive and tailored experience by
+            allowing users to control playback options directly, making the
+            video section more user-friendly and adaptable to different video
+            content types.</h4>
+            </p>
+        
+        <!-- Video Player -->
+        <video id="videoPlayer" width="420" height="345" controls>
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Video\02.MP4" type="video/mp4"> <!-- Local or accessible video URL -->
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Video\03.MP4" type="video/mp4">
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Video\04.mp4" type="video/mp4">
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Video\05.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+        <div class="controls">
+            <button id="prevVideo">Previous</button>
+            <button id="playPauseVideo">Play/Pause</button>
+            <button id="nextVideo">Next</button>
+        </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section id="audio">
+        <h2>Audio Player</h2>
+        <p>
+            <h3>
+                Play/Pause Control:</h3> <h4>Similar to the video player, users can control 
+                the start and stop functions of the audio with a single Play/Pause button, 
+                making it easy to enjoy music, podcasts, or other audio files without
+                navigating away from the page.
+            </h4>
+
+            <h3>Next/Previous Audio Navigation:</h3> 
+            <h4>The application’s custom Next and Previous
+                buttons give users quick access to different audio tracks in a playlist.
+                This allows users to skip or repeat tracks seamlessly.
+            </h4>
+        
+            <h3>Integrated Audio Player:</h3>
+            <h4>With these custom audio controls, the player
+                becomes more versatile, creating a smoother and more personalized
+                listening experience for users engaging with diverse audio content.
+            </h4>
+            
+        </p>
+
+        <!-- Audio Player -->
+        <audio id="audioPlayer" controls>
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Audio\01.mp3" type="audio/mp3">
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Audio\02.mp3" type="audio/mp3">
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Audio\03.mp3" type="audio/mp3">
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Audio\04.mp3" type="audio/mp3">
+            <source src="C:\Users\sadiq\OneDrive\Desktop\Video Player\Project for MCA\Audio\05.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button id="prevAudio">Previous</button>
+            <button id="playPauseAudio">Play/Pause</button>
+            <button id="nextAudio">Next</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Multimedia Application</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
